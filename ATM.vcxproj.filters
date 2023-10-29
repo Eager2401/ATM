@@ -27,6 +27,9 @@
     <ClInclude Include="LishSuID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp">
@@ -44,9 +47,18 @@
     <ClCompile Include="MainProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MenuUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ATMAdmin.txt">
+    <Text Include="Admin.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="TheTu.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="ID.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

@@ -2,20 +2,20 @@
 #pragma once
 class ID : public TheTu
 {
-private:
+public:
 	string nameTK;
 	int balance;
 	string loaiTien;
-public:
+
 	ID()
 	{
 		this->nameTK = " ";
 		this->loaiTien = "VND";
-		this->balance = 0;
+		this->balance = 50000;
 	}
 	ID(string id, int balance, string loaiTien) : TheTu(id)
 	{
-		this->balance = 0;
+		this->balance = 50000;
 		this->loaiTien = "VND";
 	}
 	ID(string id, string nameTK, int balance, string loaiTien) : TheTu(id) {
@@ -25,29 +25,34 @@ public:
 	}
 	void setNTK()
 	{
-		cout << "Nhap ten: "; getline(cin, this->nameTK);
+		getline(cin, this->nameTK);
 		cin.ignore();
 	}
 	void setBalance()
 	{
-		this->balance = 0;
+		this->balance = 50000;
+	}
+	string getNameTK()
+	{
+		return nameTK;
+	}
+	void setLT()
+	{
+		this->loaiTien = "VND";
+	}
+
+	int getBalance()
+	{
+		return balance;
 	}
 
 	string getLT()
 	{
 		return loaiTien;
 	}
-	int getBalance()
-	{
-		return balance;
-	}
-	string getName()
-	{
-		return nameTK;
-	}
 	void display()
 	{
-		cout << balance << " " << loaiTien;
+		cout << getBalance() << " " << getLT();
 	}
 };
 

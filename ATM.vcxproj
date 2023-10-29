@@ -130,6 +130,7 @@
     <ClInclude Include="Admin.h" />
     <ClInclude Include="ID.h" />
     <ClInclude Include="LishSuID.h" />
+    <ClInclude Include="MenuUser.h" />
     <ClInclude Include="TheTu.h" />
   </ItemGroup>
   <ItemGroup>
@@ -139,10 +140,13 @@
       <FileType>CppHeader</FileType>
     </ClCompile>
     <ClCompile Include="MainProgram.cpp" />
+    <ClCompile Include="MenuUser.cpp" />
     <ClCompile Include="TheTu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ATMAdmin.txt" />
+    <Text Include="Admin.txt" />
+    <Text Include="ID.txt" />
+    <Text Include="TheTu.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
